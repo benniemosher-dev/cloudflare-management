@@ -82,18 +82,19 @@ ln -s $HOME/Code/personal/secrets/cloudflare.auto.tfvars ./cloudflare.auto.tfvar
 ## 📋 Documentation
 
 <!-- BEGIN_TF_DOCS -->
+
 ## Requirements
 
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | ~> 3.0 |
+| Name                                                                        | Version |
+| --------------------------------------------------------------------------- | ------- |
+| <a name="requirement_terraform"></a> [terraform](#requirement_terraform)    | ~> 1.3  |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement_cloudflare) | ~> 3.0  |
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 3.29.0 |
+| Name                                                                  | Version |
+| --------------------------------------------------------------------- | ------- |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider_cloudflare) | 3.29.0  |
 
 ## Modules
 
@@ -101,20 +102,21 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [cloudflare_account.ours](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/account) | resource |
+| Name                                                                                                                                                   | Type     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| [cloudflare_account.ours](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/account)                                 | resource |
 | [cloudflare_email_routing_catch_all.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/email_routing_catch_all) | resource |
-| [cloudflare_zone.zones](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zone) | resource |
+| [cloudflare_zone.zones](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zone)                                      | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_cloudflare-config"></a> [cloudflare-config](#input\_cloudflare-config) | The config to connect Terraform to Cloudflare | <pre>object({<br>    account-id = optional(string, null)<br>    api-token  = string<br>    cidrs      = list(string)<br>  })</pre> | n/a | yes |
-| <a name="input_config"></a> [config](#input\_config) | The config for your organization in Github. | <pre>object({<br>    org-name = string<br>  })</pre> | n/a | yes |
+| Name                                                                                 | Description                                   | Type                                                                                                               | Default | Required |
+| ------------------------------------------------------------------------------------ | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------- | :------: |
+| <a name="input_cloudflare-config"></a> [cloudflare-config](#input_cloudflare-config) | The config to connect Terraform to Cloudflare | <pre>object({<br> account-id = optional(string, null)<br> api-token = string<br> cidrs = list(string)<br> })</pre> | n/a     |   yes    |
+| <a name="input_config"></a> [config](#input_config)                                  | The config for your organization in Github.   | <pre>object({<br> org-name = string<br> })</pre>                                                                   | n/a     |   yes    |
 
 ## Outputs
 
 No outputs.
+
 <!-- END_TF_DOCS -->
