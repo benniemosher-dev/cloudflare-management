@@ -6,3 +6,10 @@ variable "cloudflare-config" {
     cidrs      = list(string)
   })
 }
+
+variable "config" {
+  description = "The config for your organization in Github."
+  type = object({
+    org-name = string
+  })
+}
