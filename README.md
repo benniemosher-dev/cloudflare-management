@@ -103,6 +103,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [cloudflare_email_routing_catch_all.this](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/email_routing_catch_all) | resource |
 | [cloudflare_zone.zones](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/zone) | resource |
 
 ## Inputs
