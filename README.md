@@ -1,18 +1,19 @@
-# terraform-domain-concept
+# cloudflare-management
 
-![CI Terraform](https://github.com/benniemosher-dev/terraform-domain-concept/actions/workflows/ci-terraform.yml/badge.svg)
+![CI Terraform](https://github.com/benniemosher-dev/cloudflare-management/actions/workflows/ci-terraform.yml/badge.svg)
 
-🏕 A Terraform domain concept template. 🏕
-
-## ✅ TODO:
-
-Things to change when first creating a domain concept repository:
-
-- [ ] In `README.md` change `terraform-domain-concept` to the name of this domain concept (i.e. `benniemosher-com-infra`, `moniquemosher-com-infra`)
-- [ ] In `providers.tf` update the workspace name
-- [ ] In `README.md` delete the [TODO](README.md#todo) section
+🗿 TF managing our Cloudflare organization. 🗿
 
 ## 📜 Usage:
+
+### To retrieve Cloudflare secrets:
+
+Reach out to [@benniemosher](https://keybase.io/benniemosher) on Keybase and get access to his secrets repo then:
+
+```bash
+git clone keybase://private/benniemosher/secrets
+ln -s $HOME/Code/personal/secrets/cloudflare.auto.tfvars ./cloudflare.auto.tfvars
+```
 
 - To install dependencies needed run:
   ```bash
