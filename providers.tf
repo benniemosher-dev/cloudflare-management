@@ -8,12 +8,12 @@ terraform {
     }
   }
 
-  # cloud {
-  #   organization = "benniemosher-dev"
-  #   workspaces {
-  #     name = "cloudflare-management"
-  #   }
-  # }
+  cloud {
+    organization = "benniemosher-dev"
+    workspaces {
+      name = "cloudflare-management"
+    }
+  }
 }
 
 provider "cloudflare" {
